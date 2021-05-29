@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> RESTAURANT REVIEW ANALYSIS</title>
+        <link rel="stylesheet" type="text/css" href="../static/styles.css">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="name">
+            <h1 class="name-heading"><span class="heading-font">RESTAURANT REVIEW SENTIMENT ANALYSIS </span></h1>
+
+            <div class="about2"> 
+                <p><h4> CLASSIFICATION RESULT</h4></p>
+            </div>
+
+        </div>
+
+
+        <div class="results">
+			{% if pred==1 %}
+				<h1 class="positive">
+                    THIS IS A POSITIVE REVIEW :)
+                </h1>
+                <img src="../static/positive.gif" height="250" width="400">
+				
+			{% elif pred==0 %}
+				<h1 class="negative">
+                    THIS    IS    A    NEGATIVE REVIEW :(
+                </h1>
+				<img src="../static/negative.gif" height="250" width="400">
+			{% endif %}
+		</div>
+
+        <div class="footer"> 
+            <h4 class="dev"> Developed and Deployed by:</h4>
+            <h3 class="deba"> Debanjan Chatterjee</h3>
+
+
+      </div>
+
+    </body>

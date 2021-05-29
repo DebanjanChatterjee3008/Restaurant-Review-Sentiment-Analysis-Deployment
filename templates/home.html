@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> RESTAURANT REVIEW ANALYSIS</title>
+        <link rel="stylesheet" type="text/css" href="../static/styles.css">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="name">
+            <h1 class="name-heading"><span class="heading-font">RESTAURANT REVIEW SENTIMENT ANALYSIS </span></h1>
+
+            <div class="about"> 
+                <p><h4> Enter a review to know whether it is a Positive or Negative Review  !!</h4></p>
+            </div>
+
+        </div>
+
+        <div class="predarea">
+
+
+        <div class="firstimage">
+            <img src="../static/chef.jpeg" height="230px" width="320px">
+        </div>
+
+        <div class="inputarea">
+    		<form action="{{ url_for('index') }}", method="POST">
+        		<textarea class='message-box' name="review" rows="15" cols="50" placeholder="Enter Your input review Here..."></textarea><br/>
+        		<input type="submit" class="button" value="Classify">
+        	</form>
+    	</div>
+
+        <div class="secondimage">
+            <img src="../static/pizza.jpeg" height="230px" width="320px">
+        </div>
+
+        </div>
+
+        <div class="footer"> 
+            <h4 class="dev"> Developed and Deployed by:</h4>
+            <h3 class="deba"> Debanjan Chatterjee</h3>
+
+
+      </div>
+
+
+
+    </body>
+
+
+</html>
